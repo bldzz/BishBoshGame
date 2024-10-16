@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bish-Bosh 2.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Bish-Bosh 2.0</h1>
+        <p>A fun number game! Enter your custom values below and see how it works.</p>
+    </header>
+
+    <main>
+        <form id="bishBoshForm">
+        
+            <div class="size">
+
+
+            <label for="bishNum">Enter Bish number:</label>
+            <input type="number" id="bishNum" required min="1" placeholder="e.g., 3">
+
+            <label for="boshNum">Enter Bosh number:</label>
+            <input type="number" id="boshNum" required min="1" placeholder="e.g., 4">
+
+            <label for="loopLimit">Loop limit:</label>
+            <input type="number" id="loopLimit" required min="1" placeholder="e.g., 100">
+          </div>
+            <div class="center">
+                <button type="submit">Run Bish-Bosh</button>
+            </div>
+        </form>
+
+        <section id="output">
+            <!-- Results will display here -->
+        </section>
+
+        <section class="margin">
+            <small>Bish-Bosh lists all numbers between 1 and 100, but some exceptions: If the number is evenly divisible by 3, ​`Bish' ​is listed instead of the number. If the number is evenly divisible by 4, ``Bosh'' is listed instead of the number. If the number is evenly divisible by both 3 and 4, “​Bish-Bosh​” is written instead of the number.</small>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bldzz</p>
+    </footer>
+
+    <script src="bishbosh.js"></script>
+</body>
+</html>
